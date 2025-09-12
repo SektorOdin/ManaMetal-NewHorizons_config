@@ -2,18 +2,18 @@
 
 import minetweaker.item.IItemStack;
 
-<manametalmod:ItemUniverseMessages>.addTooltip(format.darkRed("Please don't send swearing or discriminatory things, or use at your own risk"));
-<manametalmod:ItemUniverseMessages>.addTooltip(format.darkRed("Currently only manametalmod official production team can send message"));
-<questbook:ItemQuestBook>.addTooltip(format.gold("You can also press questing key(default: `) to open quest menu"));
-<manametalmod:oreBlackDiamond>.addTooltip(format.red("Remove oredict 'denseore' for this ore. Thus can't be processed by sagmill for diamond ores"));
+<manametalmod:ItemUniverseMessages>.addTooltip(format.darkRed("Please don't send swearings or use discriminatory words, or use at your own risk"));
+<manametalmod:ItemUniverseMessages>.addTooltip(format.darkRed("Currently only members of the ManaMetalMod team can send message"));
+<questbook:ItemQuestBook>.addTooltip(format.gold("Can also press questing key(default: `) to open quest menu"));
+<manametalmod:oreBlackDiamond>.addTooltip(format.red("Removed oredict 'denseore' for this ore. Hence it can't be processed by SAG Mill for diamond ores"));
 <minecraft:bedrock>.addTooltip(format.green("True bedrock LOL"));
 <manametalmod:FakeBedrock>.addTooltip(format.red("Fake bedrock#"));
-<manametalmod:ingotBedrock>.addTooltip(format.gold("Obtain by bedrock altar (Bedrock Maker), infusion"));
+<manametalmod:ingotBedrock>.addTooltip(format.gold("Obtain by bedrock altar (Bedrock Maker) or Thaumcraft infusion"));
 <manametalmod:ingotBedrock>.addTooltip(format.gold("or harvesting bedrock by using pickaxe with tooltip: "+ format.lightPurple("Strong enough to break Bedrock")));
-<manametalmod:ItemPortalMineCaveCore>.addTooltip(format.gold("Buying in Mining Store"));
-<manametalmod:ItemToolWandBlocks>.addTooltip(format.red("Don't use this tool to move Crystal Pylon!!"));
-<DraconicEvolution:chaosShard>.addTooltip(format.gold("Obtain from Chaos Guardian or by-product of Draconic Reactor"));
-<DraconicEvolution:chaosFragment:*>.addTooltip(format.gold("Obtain from Chaos Guardian or by-product of Draconic Reactor"));
+<manametalmod:ItemPortalMineCaveCore>.addTooltip(format.gold("Buy in Mining Store"));
+<manametalmod:ItemToolWandBlocks>.addTooltip(format.red("Don't use this to move Crystal Pylon!!"));
+<DraconicEvolution:chaosShard>.addTooltip(format.gold("Obtainable from Chaos Guardian or as by-product of Draconic Reactor"));
+<DraconicEvolution:chaosFragment:*>.addTooltip(format.gold("Obtainable from Chaos Guardian or by-product of Draconic Reactor"));
 
 <universalsingularities:universal.general.singularity:11>.addTooltip(format.gold("Recipe tweaked"));
 
@@ -21,22 +21,22 @@ import minetweaker.item.IItemStack;
 
 <manametalmod:grassman>.addTooltip(format.gold("Shift R-click to clear dummy"));
 
-<ExtraUtilities:nodeUpgrade:2>.addTooltip(format.red("Disable infinity water generation"));
+<ExtraUtilities:nodeUpgrade:2>.addTooltip(format.red("Disabled infinity water generation"));
 
-val lootTip1 = format.gold("Found in Undead Ancient Tomb or Ancient Thulium Runis");
+val lootTip1 = format.gold("Found in Undead Ancient Tomb or Ancient Thulium Ruins");
 <manametalmod:BlockMagicObject0>.addTooltip(lootTip1);
 <manametalmod:BlockMagicRunes>.addTooltip(lootTip1);
 
-<RotaryCraft:rotarycraft_item_machine:75>.addTooltip(format.gold("Can disassemble machine crafted by this table(with redstone signal)"));
+<RotaryCraft:rotarycraft_item_machine:75>.addTooltip(format.gold("Can disassemble machines crafted by this table (with redstone signal)"));
 
-<ChromatiCraft:chromaticraft_item_placer:23>.addTooltip(format.gold("Can duplicate specific liquid (give it sample in bucket form)"));
+<ChromatiCraft:chromaticraft_item_placer:23>.addTooltip(format.gold("Can duplicate specific liquid (give it a sample in bucket form) and a fluid container below it"));
 
 //Let BetterQuesting can handle various types of welding dusts
 <ore:dustM3Welding>.add(<manametalmod:ItemCastingWeldingDusts:*>);
 
-<manametalmod:BlockTileEntityClothesTailors>.addTooltip(format.gold("Score over 200 will be treated as 0!"));
+<manametalmod:BlockTileEntityClothesTailors>.addTooltip(format.gold("A score over 200 will be treated as 0!"));
 
-<manametalmod:ingotCopyA>.addTooltip(format.gold("Obtained via Dragon Expedition or replicated via pylon casting"));
+<manametalmod:ingotCopyA>.addTooltip(format.gold("Obtainable via Dragon Expedition or replicated with pylon casting"));
 
 <ThaumicExploration:everfullUrn>.addTooltip(format.gold("It's best to not right click it with fluid container"));
 
@@ -45,9 +45,9 @@ val lootTip1 = format.gold("Found in Undead Ancient Tomb or Ancient Thulium Runi
 val nogenOres = [<manametalmod:oreMoonstone>, <manametalmod:oreSunstone>, <manametalmod:oreSilver>, <manametalmod:oreNickel>, <manametalmod:oreAluminum>, <manametalmod:oreIridium>, <Mekanism:OreBlock>, <manametalmod:oreAmber>, <manametalmod:orePurgatoryIron>, <manametalmod:oreEnderGold>, <manametalmod:orePlatinum>] as IItemStack[];
 
 for i in nogenOres {
-	i.addTooltip(format.red("Disable world generation"));
+	i.addTooltip(format.red("Disabled world generation"));
 }
-<manametalmod:oreIridium>.addTooltip(format.gold("Use other ore producting devices(eg: Laser Drill or Excavator) to obtain it"));
+<manametalmod:oreIridium>.addTooltip(format.gold("Use other ore producting devices(eg: MFR Laser Drill or IE Excavator) to obtain it"));
 
 //------------------------------------------------------------------------
 
