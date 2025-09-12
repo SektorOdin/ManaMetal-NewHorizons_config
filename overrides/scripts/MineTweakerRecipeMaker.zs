@@ -12,6 +12,11 @@
 
 // ================================================================================
 //#MARKER REMOVE
+recipes.remove(<ae2fc:part_fluid_pattern_terminal_ex>);
+recipes.remove(<ThermalFoundation:lexicon>);
+recipes.remove(<Mekanism:BasicBlock2:2>);
+recipes.remove(<Mekanism:BasicBlock2:1>);
+recipes.remove(<arsmagica2:arcaneDeconstructor>);
 recipes.remove(<academy-craft:ac_Block_imagFusor>);
 recipes.remove(<StorageDrawers:fullDrawers1:5>);
 recipes.remove(<StorageDrawers:fullDrawers1:4>);
@@ -125,6 +130,7 @@ recipes.addShapeless(<IC2:blockOreUran>, [<ore:orePitchblende>]);
 
 // ================================================================================
 //#MARKER ADD SHAPED
+recipes.addShaped(<ThermalFoundation:lexicon>.withTag({Empowered: 0 as byte, Inventory: {}}), [[null, <ore:gemDiamond>, null], [<ore:ingotGold>, <minecraft:book>, <ore:ingotIron>], [null, <ore:dustRedstone>, null]]);
 recipes.addShaped(<StorageDrawers:fullDrawers1:5>, [[null, <minecraft:planks:5>, null], [null, <StorageDrawers:fullCustom1>, null], [<minecraft:planks:5>, null, <minecraft:planks:5>]]);
 recipes.addShaped(<StorageDrawers:fullDrawers1:4>, [[null, <minecraft:planks:4>, null], [null, <StorageDrawers:fullCustom1>, null], [<minecraft:planks:4>, null, <minecraft:planks:4>]]);
 recipes.addShaped(<StorageDrawers:fullDrawers1:3>, [[null, <minecraft:planks:3>, null], [null, <StorageDrawers:fullCustom1>, null], [<minecraft:planks:3>, null, <minecraft:planks:3>]]);
@@ -142,7 +148,7 @@ recipes.addShaped(<MineFactoryReloaded:machine.2>, [[<ore:sheetPlastic>, <EnderI
 recipes.addShaped(<TConstruct:materials:34>, [[<TConstruct:materials:35>, <TConstruct:materials:35>, <TConstruct:materials:35>], [<TConstruct:materials:35>, <TConstruct:materials:35>, <TConstruct:materials:35>], [<TConstruct:materials:35>, <TConstruct:materials:35>, <TConstruct:materials:35>]]);
 recipes.addShaped(<manametalmod:ingotPigIron>, [[<manametalmod:nuggetPigIron>, <manametalmod:nuggetPigIron>, <manametalmod:nuggetPigIron>], [<manametalmod:nuggetPigIron>, <manametalmod:nuggetPigIron>, <manametalmod:nuggetPigIron>], [<manametalmod:nuggetPigIron>, <manametalmod:nuggetPigIron>, <manametalmod:nuggetPigIron>]]);
 recipes.addShaped(<manametalmod:blockPigIron>, [[<manametalmod:ingotPigIron>, <manametalmod:ingotPigIron>, <manametalmod:ingotPigIron>], [<manametalmod:ingotPigIron>, <manametalmod:ingotPigIron>, <manametalmod:ingotPigIron>], [<manametalmod:ingotPigIron>, <manametalmod:ingotPigIron>, <manametalmod:ingotPigIron>]]);
-recipes.addShaped(<ae2wct:infinityBoosterCard>, [[<ore:ingotUniverseEnergy>, <ChromatiCraft:chromaticraft_item_rift>, <ore:ingotUniverseEnergy>], [<manametalmod:superEnderPearl>, <appliedenergistics2:item.ItemMultiMaterial:42>, <manametalmod:superEnderPearl>], [<ore:ingotUniverseEnergy>, <ChromatiCraft:chromaticraft_item_rift>, <ore:ingotUniverseEnergy>]]);
+recipes.addShaped(<ae2wct:infinityBoosterCard>, [[<manametalmod:ingotTrueAncientThulium>, <ChromatiCraft:chromaticraft_item_rift>, <manametalmod:ingotTrueAncientThulium>], [<manametalmod:superEnderPearl>, <appliedenergistics2:item.ItemMultiMaterial:42>, <manametalmod:superEnderPearl>], [<manametalmod:ingotTrueAncientThulium>, <ChromatiCraft:chromaticraft_item_rift>, <manametalmod:ingotTrueAncientThulium>]]);
 recipes.addShaped(<MineFactoryReloaded:machine.0:10> * 4, [[<ore:sheetPlastic>, <minecraft:bucket>, <ore:sheetPlastic>], [<ore:ingotBrick>, <ore:itemMachineChassi>, <ore:ingotBrick>], [<ore:ingotBrick>, <minecraft:cauldron>, <ore:ingotBrick>]]);
 recipes.addShaped(<ThermalExpansion:capacitor:5>.withTag({RepairCost: 48763, Energy: 0}), [[null, <ore:dustRedstone>, null], [<ore:ingotEnderium>, <ThermalExpansion:capacitor:4>, <ore:ingotEnderium>], [<ore:dustRedstone>, <ore:dustPyrotheum>, <ore:dustRedstone>]]);
 recipes.addShaped(<ThermalExpansion:capacitor:4>.withTag({RepairCost: 48763, Energy: 0}), [[null, <ore:dustRedstone>, null], [<ore:ingotElectrum>, <ThermalExpansion:capacitor:3>, <ore:ingotElectrum>], [<ore:dustRedstone>, <ore:gemDiamond>, <ore:dustRedstone>]]);
@@ -150,13 +156,13 @@ recipes.addShaped(<ThermalExpansion:capacitor:3>.withTag({RepairCost: 48763, Ene
 recipes.addShaped(<ThermalExpansion:capacitor:2>.withTag({RepairCost: 48763, Energy: 0}), [[null, <ore:dustRedstone>, null], [<ore:ingotLead>, <ore:ingotCopper>, <ore:ingotLead>], [<ore:dustRedstone>, <ore:dustSulfur>, <ore:dustRedstone>]]);
 recipes.addShaped(<appliedenergistics2:item.ItemCreativeStorageCell>, [[<Avaritia:Infinity_Sword>], [<appliedenergistics2:item.ItemMultiMaterial:39>], [<EnderIO:blockBuffer:3>]]);
 recipes.addShaped(<manametalmod:goldNetherStar>, [[<ore:ingotMana>, <ore:blockGold>, <ore:ingotMana>], [<ore:itemNetherStar>, <ore:ingotMana>, <ore:itemNetherStar>], [<ore:ingotMana>, <ore:blockGold>, <ore:ingotMana>]]);
-recipes.addShaped(<manametalmod:PlatinumNetherStar>, [[<ore:ingotMana>, <ore:blockPlatinum>, <manametalmod:ingotMana>], [<manametalmod:goldNetherStar>, <ore:ingotMana>, <manametalmod:goldNetherStar>], [<ore:ingotMana>, <ore:blockPlatinum>, <ore:ingotMana>]]);
+recipes.addShaped(<manametalmod:PlatinumNetherStar>, [[<ore:ingotMana>, <ore:blockPlatinum>, <ore:ingotMana>], [<manametalmod:goldNetherStar>, <ore:ingotMana>, <manametalmod:goldNetherStar>], [<ore:ingotMana>, <ore:blockPlatinum>, <ore:ingotMana>]]);
 recipes.addShaped(<Mekanism:CardboardBox>, [[null, <ore:dustWood>, null], [<ore:dustWood>, null, <ore:dustWood>], [null, <ore:dustWood>, null]]);
 recipes.addShaped(<IC2:itemCable:9> * 4, [[<ore:blockGlass>, <ore:blockGlass>, <ore:blockGlass>], [<IC2:itemDust2:2>, <ore:dustSilver>, <IC2:itemDust2:2>], [<ore:blockGlass>, <ore:blockGlass>, <ore:blockGlass>]]);
 recipes.addShaped(<IC2:blockMachine2>, [[<ore:circuitAdvanced>, <IC2:itemFreq>, <ore:circuitAdvanced>], [<IC2:itemCable:9>, <IC2:blockMachine:12>, <IC2:itemCable:9>], [<ore:circuitAdvanced>, <ThermalExpansion:Plate:6>, <ore:circuitAdvanced>]]);
 recipes.addShaped(<IC2:blockMachine2>, [[<ore:circuitAdvanced>, <IC2:itemFreq>, <ore:circuitAdvanced>], [<IC2:itemCable:9>, <IC2:blockMachine:12>, <IC2:itemCable:9>], [<ore:circuitAdvanced>, <Mekanism:TeleportationCore>, <ore:circuitAdvanced>]]);
 recipes.addShaped(<Mekanism:TeleportationCore>, [[<ore:gemLapis>, <ore:alloyUltimate>, <ore:gemLapis>], [<ore:ingotGold>, <ore:itemEnderCrystal>, <ore:ingotGold>], [<ore:gemLapis>, <ore:alloyUltimate>, <ore:gemLapis>]]);
-recipes.addShaped(<Mekanism:MachineBlock:4>, [[<Mekanism:MachineBlock:15>, <Mekanism:Robit>, <Mekanism:MachineBlock:15>], [<Mekanism:PartTransmitter:3>, <IC2:blockMachine2:11>, <IC2:itemScannerAdv:*>]]);
+recipes.addShaped(<Mekanism:MachineBlock:4>, [[<ExtraUtilities:nodeUpgrade:10>, <Mekanism:Robit>, <ExtraUtilities:nodeUpgrade:1>], [<Mekanism:PartTransmitter:3>, <IC2:blockMachine2:11>, <IC2:itemScannerAdv:*>]]);
 recipes.addShaped(<Mekanism:AtomicDisassembler>, [[<ore:ingotTrueAncientThulium>, <ore:battery>, <ore:ingotTrueAncientThulium>], [<ore:ingotTrueAncientThulium>, <ore:alloyUltimate>, <ore:ingotTrueAncientThulium>], [null, <ore:ingotRefinedObsidian>, null]]);
 recipes.addShaped(<DraconicEvolution:chaosFragment> * 9, [[<DraconicEvolution:chaosFragment:1>]]);
 recipes.addShaped(<DraconicEvolution:chaosFragment:1> * 9, [[<DraconicEvolution:chaosFragment:2>]]);

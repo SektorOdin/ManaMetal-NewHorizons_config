@@ -40,6 +40,13 @@ val lootTip1 = format.gold("Found in Undead Ancient Tomb or Ancient Thulium Ruin
 
 <ThaumicExploration:everfullUrn>.addTooltip(format.gold("It's best to not right click it with fluid container"));
 
+<ChromatiCraft:chromaticraft_item_placer:3>.addTooltip(format.gold("Can't reprogram Boss and some mobs"));
+
+<ChromatiCraft:chromaticraft_item_placer:29>.addTooltip(format.gold("Will scan large area when first placed, may cause server no response during scanning"));
+
+<ChromatiCraft:chromaticraft_item_bulkmover>.addTooltip(format.gold("Click inventory slot except hotbar when open setting GUI will cause client crash"));
+<ChromatiCraft:chromaticraft_item_bulkmover>.addTooltip(format.gold("Please move your filtered item to hotbar first to prevent crash"));
+
 //------------------------------------------------------------------------
 
 val nogenOres = [<manametalmod:oreMoonstone>, <manametalmod:oreSunstone>, <manametalmod:oreSilver>, <manametalmod:oreNickel>, <manametalmod:oreAluminum>, <manametalmod:oreIridium>, <Mekanism:OreBlock>, <manametalmod:oreAmber>, <manametalmod:orePurgatoryIron>, <manametalmod:oreEnderGold>, <manametalmod:orePlatinum>] as IItemStack[];
@@ -88,7 +95,7 @@ for i in mmmManaPools {
 //------------------------------------------------------------------------
 //available in dungeon dimension
 
-val availInDungeon = [<ae2wct:wirelessCraftingTerminal>,<academy-craft:ac_Item_silbarn>,<academy-craft:ac_Item_magHook>,<academy-craft:ac_Item_coin>,<TaintedMagic:ItemKatana:*>,<Mekanism:Flamethrower>,<witchery:mysticbranch>,<witchery:deathshand>,<witchery:mooncharm>,<witchery:witchhand>,<IC2:itemNanoSaber>,<RotaryCraft:rotarycraft_item_gravelgun>,<RotaryCraft:rotarycraft_item_stungun>,<ChromatiCraft:chromaticraft_item_chaingun>,<ChromatiCraft:chromaticraft_item_splashgun>,<ChromatiCraft:chromaticraft_item_splineattack>,<ChromatiCraft:chromaticraft_item_killauragun>,<ChromatiCraft:chromaticraft_item_hoverwand>,<wizardry:magic_wand>,<wizardry:apprentice_wand>,<wizardry:advanced_wand>,<wizardry:master_wand>,<wizardry:basic_fire_wand>,<wizardry:basic_ice_wand>,<wizardry:basic_lightning_wand>,<wizardry:basic_necromancy_wand>,<wizardry:basic_earth_wand>,<wizardry:basic_sorcery_wand>,<wizardry:basic_healing_wand>,<wizardry:apprentice_fire_wand>,<wizardry:apprentice_ice_wand>,<wizardry:apprentice_lightning_wand>,<wizardry:apprentice_necromancy_wand>,<wizardry:apprentice_earth_wand>,<wizardry:apprentice_sorcery_wand>,<wizardry:apprentice_healing_wand>,<wizardry:advanced_fire_wand>,<wizardry:advanced_ice_wand>,<wizardry:advanced_lightning_wand>,<wizardry:advanced_necromancy_wand>,<wizardry:advanced_earth_wand>,<wizardry:advanced_sorcery_wand>,<wizardry:advanced_healing_wand>,<wizardry:master_fire_wand>,<wizardry:master_ice_wand>,<wizardry:master_lightning_wand>,<wizardry:master_necromancy_wand>,<wizardry:master_earth_wand>,<wizardry:master_sorcery_wand>,<wizardry:master_healing_wand>,<mo:phaser_rifle>,<mo:plasma_shotgun>,<mo:ion_sniper>,<arsmagica2:spellBase>,<TConstruct:Shuriken>,<TConstruct:ThrowingKnife>,<TConstruct:Javelin>,<TConstruct:ShortBow>,<TConstruct:Crossbow>,<Botania:brewVial>,<Botania:brewFlask>] as IItemStack[];
+val availInDungeon = [<ae2wct:wirelessCraftingTerminal>,<academy-craft:ac_Item_silbarn>,<academy-craft:ac_Item_magHook>,<academy-craft:ac_Item_coin>,<TaintedMagic:ItemKatana:*>,<Mekanism:Flamethrower>,<witchery:mysticbranch>,<witchery:deathshand>,<witchery:mooncharm>,<witchery:witchhand>,<IC2:itemNanoSaber>,<RotaryCraft:rotarycraft_item_gravelgun>,<RotaryCraft:rotarycraft_item_stungun>,<ChromatiCraft:chromaticraft_item_chaingun>,<ChromatiCraft:chromaticraft_item_splashgun>,<ChromatiCraft:chromaticraft_item_splineattack>,<ChromatiCraft:chromaticraft_item_killauragun>,<ChromatiCraft:chromaticraft_item_hoverwand>,<wizardry:magic_wand>,<wizardry:apprentice_wand>,<wizardry:advanced_wand>,<wizardry:master_wand>,<wizardry:basic_fire_wand>,<wizardry:basic_ice_wand>,<wizardry:basic_lightning_wand>,<wizardry:basic_necromancy_wand>,<wizardry:basic_earth_wand>,<wizardry:basic_sorcery_wand>,<wizardry:basic_healing_wand>,<wizardry:apprentice_fire_wand>,<wizardry:apprentice_ice_wand>,<wizardry:apprentice_lightning_wand>,<wizardry:apprentice_necromancy_wand>,<wizardry:apprentice_earth_wand>,<wizardry:apprentice_sorcery_wand>,<wizardry:apprentice_healing_wand>,<wizardry:advanced_fire_wand>,<wizardry:advanced_ice_wand>,<wizardry:advanced_lightning_wand>,<wizardry:advanced_necromancy_wand>,<wizardry:advanced_earth_wand>,<wizardry:advanced_sorcery_wand>,<wizardry:advanced_healing_wand>,<wizardry:master_fire_wand>,<wizardry:master_ice_wand>,<wizardry:master_lightning_wand>,<wizardry:master_necromancy_wand>,<wizardry:master_earth_wand>,<wizardry:master_sorcery_wand>,<wizardry:master_healing_wand>,<mo:phaser_rifle>,<mo:plasma_shotgun>,<mo:ion_sniper>,<arsmagica2:spellBase>,<TConstruct:Shuriken>,<TConstruct:ThrowingKnife>,<TConstruct:Javelin>,<TConstruct:ShortBow>,<TConstruct:Crossbow>,<Botania:brewVial>,<Botania:brewFlask>,<arsmagica2:arcane_spellbook>,<arsmagica2:lesserManaPotion>,<arsmagica2:standardManaPotion>,<arsmagica2:greaterManaPotion>,<arsmagica2:epicManaPotion>,<arsmagica2:legendaryManaPotion>,<arsmagica2:manaPotionBundle:*>,<arsmagica2:liquidEssenceBottle>,<Botania:infiniteFruit>] as IItemStack[];
 
 for i in availInDungeon {
 	i.addTooltip(format.gold("Can be used in M3 Dungeon dimension"));
@@ -101,7 +108,7 @@ for i in availInDungeon {
 //------------------------------------------------------------------------
 //banned item
 
-val bannedItems = [<MineFactoryReloaded:machine.2:2>, <WitchingGadgets:item.WG_Bag:3>] as IItemStack[];
+val bannedItems = [<MineFactoryReloaded:machine.2:2>, <WitchingGadgets:item.WG_Bag:3>, <arsmagica2:arcaneDeconstructor>, <Mekanism:BasicBlock2:1>, <Mekanism:BasicBlock2:2>, <Mekanism:BasicBlock2:3>, <Mekanism:BasicBlock2:4>, <Mekanism:MachineBlock:15>, <thaumicbases:overchanter>, <ae2fc:part_fluid_pattern_terminal_ex>] as IItemStack[];
 
 for i in bannedItems {
 	i.addTooltip(format.darkRed("Banned item"));
